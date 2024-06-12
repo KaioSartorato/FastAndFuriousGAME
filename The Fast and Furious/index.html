@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>The Fast and The Furious</title>
+    <link rel="icon" href="img/vindiesel.png">
+    <link href="css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div id='fundo'>
+            <div id='area_jogo' class='area_jogo'>
+                <div id='start' onclick='start()'>
+                    <div class="start-content">
+                        <img src="img/logo.png" height=100px />
+                        <p>UTILIZE AS SETAS PARA SE MOVIMENTAR
+                        PARA A ESQUERDA E DIREITA</p>
+                        <h2>CLIQUE AQUI PARA INICIAR</h2>
+                    </div>
+                </div>
+                <div id='gameover' style='display:none' onclick='reiniciar()'>
+                    <div class="start-content">
+                        <img src="img/logo.png" height=100px />
+						<p>TORETTO MORREU! :/</p>
+						<p>TENTE NOVAMENTE</p>
+						<h2>CLIQUE AQUI PARA INICIAR</h2>
+					</div>
+                </div>
+				<div id='vitoria' style='display:none' onclick='reiniciar()'>
+                    <div class="start-content">
+                        <img src="img/logo.png" height=100px />
+						<p>VOCÊ SALVOU A FAMÍLIA!
+						<b>VOCÊ GANHOU!</b>
+						<h2>CLIQUE AQUI PARA INICIAR NOVAMENTE</h2>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="sons/tokyodrift.mp3" preload="auto" id="somjogo"></audio>
+    <audio src="sons/explode.mp3" preload="auto" id="explode"></audio>
+    <audio src="sons/salva.mp3" preload="auto" id="salva"></audio>
+    <audio src="sons/moeda.mp3" preload="auto" id="coin"></audio>
+    <audio src="sons/vitoria.mp3" preload="auto" id="victory"></audio>
+    <audio src="sons/grito.mp3" preload="auto" id="grito"></audio>
+    <audio src="sons/morre.mp3" preload="auto" id="morre"></audio>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-collision.min.js"></script>
+    <script type="text/javascript" src="js/jogo.js"></script> 
+</body>
+</html>
